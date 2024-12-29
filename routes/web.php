@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\admin\ConsultoresController;
+use App\Http\Controllers\admin\UserController;
 use App\Http\Controllers\admin\CredoresController;
 use App\Http\Controllers\admin\DevedoresController;
 use App\Http\Controllers\admin\FinanceiroController;

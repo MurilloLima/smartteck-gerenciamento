@@ -28,7 +28,7 @@
                 <!-- Add icons to the links using the .nav-icon class
                    with font-awesome or any other icon font library -->
 
-                <li class="nav-item menu-open">
+                <li class="nav-item">
                     <a href="#" style="background-color: #D2670E" class="nav-link active">
                         <i class="nav-icon fas fa-file"></i>
                         <p>
@@ -37,12 +37,12 @@
                         </p>
                     </a>
                     <ul class="nav nav-treeview">
-                        <li class="nav-item">
+                        {{-- <li class="nav-item">
                             <a href="{{ route('smtp.index') }}" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Configuração de e-mail</p>
                             </a>
-                        </li>
+                        </li> --}}
                         <li class="nav-item">
                             <a href="{{ route('consultores.index') }}" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
