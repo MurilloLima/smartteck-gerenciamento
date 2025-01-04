@@ -115,10 +115,12 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="" class="nav-link">
-                                <i class="far fa-circle nav-icon"></i>
-                                <p>Sair</p>
-                            </a>
+                            <form action="{{ route('logout') }}" method="post">
+                                @csrf
+                                <button type="submit" value="Sair" class="btn btn-danger form-control">
+                                    Sair
+                                </button>
+                            </form>
                         </li>
                     </ul>
                 </li>
