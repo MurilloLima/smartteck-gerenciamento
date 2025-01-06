@@ -308,7 +308,7 @@
                                             <font color="red"><span class="field-validation-valid"
                                                     data-valmsg-for="permite_limpar_transacao_como_consultor"
                                                     data-valmsg-replace="true"></span></font>
-                                            <span id="helpPermiteLimparTransacaoComoConsultor" class="help-block">Escolha
+                                            <span id="" style="font-size: 11px">Escolha
                                                 Sim para permitir que os consultores deste grupo de consultores possam
                                                 limpar transações de parcelas de acordos.</span>
                                         </div>
@@ -328,7 +328,8 @@
                                             <font color="red"><span class="field-validation-valid"
                                                     data-valmsg-for="permite_inativar_devedor_como_consultor"
                                                     data-valmsg-replace="true"></span></font>
-                                            <span id="helpPermiteInativarDevedores" class="help-block">Escolha Sim para
+                                            <span id="" class="help-block" style="font-size: 11px">Escolha Sim
+                                                para
                                                 permitir que os consultores deste grupo de consultores possam inativar
                                                 cadastros de devedores.</span>
                                         </div>
@@ -350,7 +351,8 @@
                                             <font color="red"><span class="field-validation-valid"
                                                     data-valmsg-for="permite_pesquisa_por_situacao_devedor_como_consultor"
                                                     data-valmsg-replace="true"></span></font>
-                                            <span id="helpPermitePesquisarDevedores" class="help-block">Escolha Sim para
+                                            <span id="" style="font-size: 11px" class="help-block">Escolha Sim
+                                                para
                                                 permitir que os consultores deste grupo de consultores possam pesquisar
                                                 devedores por situação (ativo ou inativo). Escolha Não para permitir somente
                                                 pesquisa por devedores ativos.</span>
@@ -371,7 +373,8 @@
                                             <font color="red"><span class="field-validation-valid"
                                                     data-valmsg-for="permite_upload_boleto_manual_como_consultor"
                                                     data-valmsg-replace="true"></span></font>
-                                            <span id="helpPermiteUpload" class="help-block">Escolha Sim para permitir que
+                                            <span id="helpPermiteUpload" class="help-block"
+                                                style="font-size: 11px">Escolha Sim para permitir que
                                                 os consultores deste grupo de consultores possam fazer o upload de boletos
                                                 manuais. Este recurso é válido apenas para devedores de credores que
                                                 utilizem o meio de pagamento boleto manual.</span>
@@ -392,7 +395,8 @@
                                             <font color="red"><span class="field-validation-valid"
                                                     data-valmsg-for="id_evento_reagendamento"
                                                     data-valmsg-replace="true"></span></font>
-                                            <span id="helpPermiteUpload" class="help-block">Escolha um evento a ser
+                                            <span id="helpPermiteUpload" class="help-block"
+                                                style="font-size: 11px">Escolha um evento a ser
                                                 atribuído automaticamente para os consultores deste grupo de consultores em
                                                 reagendamento feitos por meio do botão Reagendar, presente na tela de
                                                 negociações do devedor. O botão Reagendar somente será exibido se houver um
@@ -415,7 +419,8 @@
                                             <font color="red"><span class="field-validation-valid"
                                                     data-valmsg-for="permite_reagendamento_para_outros_consultores"
                                                     data-valmsg-replace="true"></span></font>
-                                            <span id="helpPermiteReagendamentoOutros" class="help-block">Escolha Sim para
+                                            <span id="helpPermiteReagendamentoOutros" class="help-block"
+                                                style="font-size: 11px">Escolha Sim para
                                                 permitir que consultores deste grupo possam selecionar o nome do consultor
                                                 que ficará responsável pelo reagendamento. Escolha Não para que o
                                                 reagendamento possa ser atribuído apenas ao consultor logado ou para seu
@@ -439,7 +444,8 @@
                                             <font color="red"><span class="field-validation-valid"
                                                     data-valmsg-for="exibir_relatorio_financeiro_do_consultor"
                                                     data-valmsg-replace="true"></span></font>
-                                            <span id="helpExibirRelFinanceiro" class="help-block">Escolha Sim para
+                                            <span id="helpExibirRelFinanceiro" class="help-block"
+                                                style="font-size: 11px">Escolha Sim para
                                                 permitir que os consultores deste grupo de consultores possam visualizar o
                                                 relatório financeiro de acordos feitos pelo consultor logado. O relatório
                                                 financeiro exibe as parcelas de acordo que foram pagas em um determinado
@@ -461,7 +467,8 @@
                                             <font color="red"><span class="field-validation-valid"
                                                     data-valmsg-for="permite_cadastro_devedores_dividas"
                                                     data-valmsg-replace="true"></span></font>
-                                            <span id="helpHabCadDevDiv" class="help-block">Escolha Sim para permitir que
+                                            <span id="helpHabCadDevDiv" class="help-block"
+                                                style="font-size: 11px">Escolha Sim para permitir que
                                                 os consultores deste grupo cadastrem novos devedores e dívidas. Isso pode
                                                 ser útil em credores que não usam importação e enviam novos devedores
                                                 individualmente para cobrança. Escolha Não para permitir o cadastro de
@@ -484,7 +491,8 @@
                                             <font color="red"><span class="field-validation-valid"
                                                     data-valmsg-for="permite_vis_dashboard_devedor"
                                                     data-valmsg-replace="true"></span></font>
-                                            <span id="helpVisDashDevedor" class="help-block">Escolha Sim para permitir que
+                                            <span id="helpVisDashDevedor" class="help-block"
+                                                style="font-size: 11px">Escolha Sim para permitir que
                                                 os consultores deste grupo visualizem o dashboard dos devedores. Escolha Não
                                                 para não permitir a visualição do dashboard dos devedores como
                                                 consultor.</span>
@@ -503,7 +511,8 @@
                                             </select>
                                             <font color="red"><span class="field-validation-valid"
                                                     data-valmsg-for="situacao" data-valmsg-replace="true"></span></font>
-                                            <span id="helpSituacao" class="help-block">Situação do grupo de consultores.
+                                            <span id="helpSituacao" class="help-block" style="font-size: 11px">Situação
+                                                do grupo de consultores.
                                                 Somente grupos ativos poderão ser associados aos novos consultores.</span>
                                         </div>
                                     </div>
