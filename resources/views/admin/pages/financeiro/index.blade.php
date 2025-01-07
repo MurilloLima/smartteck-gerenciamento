@@ -1,5 +1,5 @@
 @extends('admin.layout.app')
-@section('ittle', 'Financeiro')
+@section('title', 'Financeiro')
 @section('content')
  <section class="content-header">
         <div class="container-fluid">

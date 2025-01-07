@@ -28,9 +28,9 @@
                 <!-- Add icons to the links using the .nav-icon class
                    with font-awesome or any other icon font library -->
 
-                <li class="nav-item">
+                <li class="nav-item menu-open">
                     <a href="#" style="background-color: #D2670E" class="nav-link active">
-                        <i class="nav-icon fas fa-file"></i>
+                        <i class="nav-icon fas fa-edit"></i>
                         <p>
                             Cadastros
                             <i class="fas fa-angle-left right"></i>
@@ -114,7 +114,7 @@
                 </li>
                 <li class="nav-item">
                     <a href="#" class="nav-link">
-                        <i class="fa fa-list nav-icon"></i>
+                        <i class="nav-icon far fa-envelope"></i>
                         <p>
                             Suporte
                             <i class="fas fa-angle-left right"></i>
