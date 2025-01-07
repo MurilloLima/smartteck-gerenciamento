@@ -20,7 +20,7 @@ class ListaController extends Controller
      */
     public function create()
     {
-        return view('admin.pages.consultores.create');
+        return view('admin.pages.consultores.lista.create');
     }
 
     /**

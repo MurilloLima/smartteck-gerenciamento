@@ -85,7 +85,7 @@
                     <a href="{{ route('consultores.create') }}" style="background-color: #D2670E; border-color: #D2670E;" class="btn btn-primary">Adicionar</a>
                     <a href="{{ route('grupo.index') }}" style="background-color: #D2670E; border-color: #D2670E;" class="btn btn-primary">Grupos</a>
                     <a href="" style="background-color: #D2670E; border-color: #D2670E;" class="btn btn-primary">Importar consultores</a>
-                    <a href="{{ route('consultores.index') }}" style="background-color: #D2670E; border-color: #D2670E;" class="btn btn-primary">Listas</a>
+                    <a href="{{ route('lista.index') }}" style="background-color: #D2670E; border-color: #D2670E;" class="btn btn-primary">Listas</a>
                     <a href="" style="background-color: #D2670E; border-color: #D2670E;" class="btn btn-primary">Relatorio de pausas</a>
                     <a href="" style="background-color: #D2670E; border-color: #D2670E;" class="btn btn-primary">Status do telefone</a>
                     <a href="" style="background-color: #D2670E; border-color: #D2670E;" class="btn btn-primary">Tipos de pausas</a>

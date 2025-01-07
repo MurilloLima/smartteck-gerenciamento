@@ -87,17 +87,60 @@
                         <i class="fa fa-usd nav-icon" aria-hidden="true"></i>
                         <p>
                             Financeiro
+                            <i class="fas fa-angle-left right"></i>
                         </p>
                     </a>
+                    <ul class="nav nav-treeview">
+                       
+                        <li class="nav-item">
+                            <a href="" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Dividas</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Negociações</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{{ route('devedores.index') }}" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Relatório financeiro</p>
+                            </a>
+                        </li>
+                    </ul>
                 </li>
                 <li class="nav-item">
                     <a href="#" class="nav-link">
                         <i class="fa fa-list nav-icon"></i>
                         <p>
                             Suporte
-                            {{-- <i class="fas fa-angle-left right"></i> --}}
+                            <i class="fas fa-angle-left right"></i>
                         </p>
                     </a>
+                    <ul class="nav nav-treeview">
+                       
+                        <li class="nav-item">
+                            <a href="" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Chamados</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{{ route('credor.index') }}" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Documentação</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{{ route('devedores.index') }}" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Vide Aulas</p>
+                            </a>
+                        </li>
+                    </ul>
                 </li>
                 <li class="nav-item">
                     <a href="#" class="nav-link">
@@ -136,7 +179,8 @@
     <!-- Left navbar links -->
     <ul class="navbar-nav">
         <li class="nav-item">
-            <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+            <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i
+                    class="fas fa-bars"></i></a>
         </li>
         <li class="nav-item d-none d-sm-inline-block">
             <a href="index3.html" class="nav-link">Home</a>

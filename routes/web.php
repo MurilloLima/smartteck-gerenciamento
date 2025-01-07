@@ -28,6 +28,9 @@ Route::middleware('auth')->group(function () {
     //consultores
     Route::get('/consultores', [ConsultoresController::class, 'index'])->name('consultores.index');
     Route::get('/consultores/create', [ConsultoresController::class, 'create'])->name('consultores.create');
+    //lista
+    Route::get('/lista', [ListaController::class, 'index'])->name('lista.index');
+    Route::get('/lista/create', [ListaController::class, 'create'])->name('lista.create');
     //grupos
     Route::get('/consultores/grupo', [GrupoController::class, 'index'])->name('grupo.index');
     Route::get('/consultores/grupo/create', [GrupoController::class, 'create'])->name('grupo.create');
