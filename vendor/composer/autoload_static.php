@@ -357,8 +357,8 @@ class ComposerStaticInitb4a1cc50e8dde1eb4ceb8e37207dda6b
         ),
         'Psr\\Http\\Message\\' => 
         array (
-            0 => __DIR__ . '/..' . '/psr/http-message/src',
-            1 => __DIR__ . '/..' . '/psr/http-factory/src',
+            0 => __DIR__ . '/..' . '/psr/http-factory/src',
+            1 => __DIR__ . '/..' . '/psr/http-message/src',
         ),
         'Psr\\Http\\Client\\' => 
         array (
@@ -557,8 +557,15 @@ class ComposerStaticInitb4a1cc50e8dde1eb4ceb8e37207dda6b
         'App\\Http\\Controllers\\FinanceiroController' => __DIR__ . '/../..' . '/app/Http/Controllers/FinanceiroController.php',
         'App\\Http\\Controllers\\MaladiretaController' => __DIR__ . '/../..' . '/app/Http/Controllers/MaladiretaController.php',
         'App\\Http\\Controllers\\ProfileController' => __DIR__ . '/../..' . '/app/Http/Controllers/ProfileController.php',
+        'App\\Http\\Controllers\\SmtpController' => __DIR__ . '/../..' . '/app/Http/Controllers/SmtpController.php',
         'App\\Http\\Controllers\\SuporteController' => __DIR__ . '/../..' . '/app/Http/Controllers/SuporteController.php',
+        'App\\Http\\Controllers\\admin\\ConsultoresController' => __DIR__ . '/../..' . '/app/Http/Controllers/admin/ConsultoresController.php',
+        'App\\Http\\Controllers\\admin\\CredoresController' => __DIR__ . '/../..' . '/app/Http/Controllers/admin/CredoresController.php',
+        'App\\Http\\Controllers\\admin\\DevedoresController' => __DIR__ . '/../..' . '/app/Http/Controllers/admin/DevedoresController.php',
         'App\\Http\\Controllers\\admin\\FinanceiroController' => __DIR__ . '/../..' . '/app/Http/Controllers/admin/FinanceiroController.php',
+        'App\\Http\\Controllers\\admin\\GrupoController' => __DIR__ . '/../..' . '/app/Http/Controllers/admin/GrupoController.php',
+        'App\\Http\\Controllers\\admin\\ListaController' => __DIR__ . '/../..' . '/app/Http/Controllers/admin/ListaController.php',
+        'App\\Http\\Controllers\\admin\\NotificacoesController' => __DIR__ . '/../..' . '/app/Http/Controllers/admin/NotificacoesController.php',
         'App\\Http\\Controllers\\admin\\SuportController' => __DIR__ . '/../..' . '/app/Http/Controllers/admin/SuportController.php',
         'App\\Http\\Controllers\\admin\\UserController' => __DIR__ . '/../..' . '/app/Http/Controllers/admin/UserController.php',
         'App\\Http\\Kernel' => __DIR__ . '/../..' . '/app/Http/Kernel.php',
@@ -577,6 +584,7 @@ class ComposerStaticInitb4a1cc50e8dde1eb4ceb8e37207dda6b
         'App\\Models\\Credort' => __DIR__ . '/../..' . '/app/Models/Credort.php',
         'App\\Models\\Financeiro' => __DIR__ . '/../..' . '/app/Models/Financeiro.php',
         'App\\Models\\Maladireta' => __DIR__ . '/../..' . '/app/Models/Maladireta.php',
+        'App\\Models\\Smtp' => __DIR__ . '/../..' . '/app/Models/Smtp.php',
         'App\\Models\\Suporte' => __DIR__ . '/../..' . '/app/Models/Suporte.php',
         'App\\Models\\User' => __DIR__ . '/../..' . '/app/Models/User.php',
         'App\\Providers\\AppServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AppServiceProvider.php',
