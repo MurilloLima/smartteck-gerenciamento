@@ -5,6 +5,9 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Adminstrativo - @yield('title')</title>
+    {{-- icon --}}
+    <link rel="icon" type="image/png" href="{{ asset('admin/dist/img/50x50.ico') }}" />
+
     <!-- Tell the browser to be responsive to screen width -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Font Awesome -->

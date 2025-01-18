@@ -18,11 +18,6 @@
     </section>
     <section class="content">
         <div class="container-fluid">
-            <div class="row">
-                
-
-            </div>
-
             <div class="row" style="margin-bottom: 10px">
                 <div class="col-md-12">
                     <a href="{{ route('lista.create') }}" style="background-color: #D2670E; border-color: #D2670E;"
