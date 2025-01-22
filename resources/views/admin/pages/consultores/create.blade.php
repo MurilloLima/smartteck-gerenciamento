@@ -31,82 +31,85 @@
                                 </button>
                             </div> --}}
                         </div>
-                        <!-- /.card-header -->
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <div class="form-group">
-                                        <label for="exampleInputPassword1">Nome</label>
-                                        <input type="text" class="form-control" id="exampleInputPassword1"
-                                            placeholder="Nome">
+                        <form action="{{ route('consultores.store') }}" method="post">
+                            <!-- /.card-header -->
+                            <div class="card-body">
+                                @csrf
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label for="exampleInputPassword1">Nome</label>
+                                            <input type="text" class="form-control" name="name"
+                                                placeholder="Nome">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label for="exampleInputPassword1">E-mail</label>
+                                            <input type="text" class="form-control" name="email"
+                                                placeholder="">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label for="exampleInputPassword1">Grupo</label>
+                                            <input type="text" class="form-control" name="grupo"
+                                                placeholder="">
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="col-md-4">
-                                    <div class="form-group">
-                                        <label for="exampleInputPassword1">E-mail</label>
-                                        <input type="text" class="form-control" id="exampleInputPassword1"
-                                            placeholder="">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label for="exampleInputPassword1">Telefone</label>
+                                            <input type="text" class="form-control" name="phone"
+                                                placeholder="">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label for="exampleInputPassword1">Cidade</label>
+                                            <input type="text" class="form-control" name="city"
+                                                placeholder="">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label for="exampleInputPassword1">Estado</label>
+                                            <input type="text" class="form-control" name="uf"
+                                                placeholder="">
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="col-md-4">
-                                    <div class="form-group">
-                                        <label for="exampleInputPassword1">Grupo</label>
-                                        <input type="text" class="form-control" id="exampleInputPassword1"
-                                            placeholder="">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label for="exampleInputPassword1">Especialidade</label>
+                                            <input type="text" class="form-control" name="especialodade"
+                                                placeholder="">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label for="exampleInputPassword1">Código</label>
+                                            <input type="text" class="form-control" name="cod"
+                                                placeholder="">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label for="exampleInputPassword1">Observação</label>
+                                            <input type="text" class="form-control" name="obs"
+                                                placeholder="">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <div class="form-group">
-                                        <label for="exampleInputPassword1">Telefone</label>
-                                        <input type="text" class="form-control" id="exampleInputPassword1"
-                                            placeholder="">
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="form-group">
-                                        <label for="exampleInputPassword1">Cidade</label>
-                                        <input type="text" class="form-control" id="exampleInputPassword1"
-                                            placeholder="">
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="form-group">
-                                        <label for="exampleInputPassword1">Estado</label>
-                                        <input type="text" class="form-control" id="exampleInputPassword1"
-                                            placeholder="">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <div class="form-group">
-                                        <label for="exampleInputPassword1">Especialidade</label>
-                                        <input type="text" class="form-control" id="exampleInputPassword1"
-                                            placeholder="">
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="form-group">
-                                        <label for="exampleInputPassword1">Código</label>
-                                        <input type="text" class="form-control" id="exampleInputPassword1"
-                                            placeholder="">
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="form-group">
-                                        <label for="exampleInputPassword1">Observação</label>
-                                        <input type="text" class="form-control" id="exampleInputPassword1"
-                                            placeholder="">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
 
-                        <div class="card-footer">
-                            <button type="submit" class="btn btn-default">Cadastrar</button>
-                        </div>
+                            <div class="card-footer">
+                                <button type="submit" class="btn btn-default">Cadastrar</button>
+                            </div>
+                        </form>
                         <!-- /.card-body -->
 
                     </div>

@@ -28,7 +28,7 @@ class ConsultoresController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        
     }
 
     /**

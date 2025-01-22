@@ -28,6 +28,8 @@ Route::middleware('auth')->group(function () {
     //consultores
     Route::get('/consultores', [ConsultoresController::class, 'index'])->name('consultores.index');
     Route::get('/consultores/create', [ConsultoresController::class, 'create'])->name('consultores.create');
+    Route::post('/consultores/store', [ConsultoresController::class, 'store'])->name('consultores.store');
+
     //lista
     Route::get('/lista', [ListaController::class, 'index'])->name('lista.index');
     Route::get('/lista/create', [ListaController::class, 'create'])->name('lista.create');
