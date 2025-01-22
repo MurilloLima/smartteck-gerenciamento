@@ -13,15 +13,15 @@ return new class extends Migration
     {
         Schema::create('consultors', function (Blueprint $table) {
             $table->id();
-            $table->string('nome');
+            $table->string('name');
             $table->string('email');
             $table->string('grupo');
-            $table->string('telefone');
-            $table->string('cidade');
+            $table->string('phone');
+            $table->string('city');
             $table->string('uf');
-            $table->string('especialidade');
+            $table->string('especialodade');
             $table->string('cod');
-            $table->string('observacao');
+            $table->string('obs');
             $table->timestamps();
         });
     }

@@ -19,6 +19,28 @@
     <section class="content">
         <div class="container-fluid">
             <div class="row">
+                <div class="col-12">
+                    @if ($errors->any())
+                        <div class="alert alert-danger text-center" style="margin: 10px;">
+                            <ul>
+                                @foreach ($errors->all() as $error)
+                                    <li style="text-align: center">{{ $error }}</li>
+                                @endforeach
+                            </ul>
+                        </div>
+                    @endif
+                    @if (session('msg'))
+                        <div class="row text-center">
+                            <div class="col-md-12" \>
+                                <div class="alert alert-success text-center" style="color: white; margin: 10px;">
+                                    {{ session('msg') }}
+                                </div>
+                            </div>
+                        </div>
+                    @endif
+                </div>
+            </div>
+            <div class="row">
                 <div class="col-md-12">
                     <div class="card">
                         <div class="card-header">
@@ -39,22 +61,19 @@
                                     <div class="col-md-4">
                                         <div class="form-group">
                                             <label for="exampleInputPassword1">Nome</label>
-                                            <input type="text" class="form-control" name="name"
-                                                placeholder="Nome">
+                                            <input type="text" class="form-control" name="name" placeholder="Nome">
                                         </div>
                                     </div>
                                     <div class="col-md-4">
                                         <div class="form-group">
                                             <label for="exampleInputPassword1">E-mail</label>
-                                            <input type="text" class="form-control" name="email"
-                                                placeholder="">
+                                            <input type="text" class="form-control" name="email" placeholder="">
                                         </div>
                                     </div>
                                     <div class="col-md-4">
                                         <div class="form-group">
                                             <label for="exampleInputPassword1">Grupo</label>
-                                            <input type="text" class="form-control" name="grupo"
-                                                placeholder="">
+                                            <input type="text" class="form-control" name="grupo" placeholder="">
                                         </div>
                                     </div>
                                 </div>
@@ -62,22 +81,19 @@
                                     <div class="col-md-4">
                                         <div class="form-group">
                                             <label for="exampleInputPassword1">Telefone</label>
-                                            <input type="text" class="form-control" name="phone"
-                                                placeholder="">
+                                            <input type="text" class="form-control" name="phone" placeholder="">
                                         </div>
                                     </div>
                                     <div class="col-md-4">
                                         <div class="form-group">
                                             <label for="exampleInputPassword1">Cidade</label>
-                                            <input type="text" class="form-control" name="city"
-                                                placeholder="">
+                                            <input type="text" class="form-control" name="city" placeholder="">
                                         </div>
                                     </div>
                                     <div class="col-md-4">
                                         <div class="form-group">
                                             <label for="exampleInputPassword1">Estado</label>
-                                            <input type="text" class="form-control" name="uf"
-                                                placeholder="">
+                                            <input type="text" class="form-control" name="uf" placeholder="">
                                         </div>
                                     </div>
                                 </div>
@@ -85,22 +101,19 @@
                                     <div class="col-md-4">
                                         <div class="form-group">
                                             <label for="exampleInputPassword1">Especialidade</label>
-                                            <input type="text" class="form-control" name="especialodade"
-                                                placeholder="">
+                                            <input type="text" class="form-control" name="especialodade" placeholder="">
                                         </div>
                                     </div>
                                     <div class="col-md-4">
                                         <div class="form-group">
                                             <label for="exampleInputPassword1">Código</label>
-                                            <input type="text" class="form-control" name="cod"
-                                                placeholder="">
+                                            <input type="text" class="form-control" name="cod" placeholder="">
                                         </div>
                                     </div>
                                     <div class="col-md-4">
                                         <div class="form-group">
                                             <label for="exampleInputPassword1">Observação</label>
-                                            <input type="text" class="form-control" name="obs"
-                                                placeholder="">
+                                            <input type="text" class="form-control" name="obs" placeholder="">
                                         </div>
                                     </div>
                                 </div>

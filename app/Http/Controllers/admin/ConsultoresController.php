@@ -18,7 +18,8 @@ class ConsultoresController extends Controller
      */
     public function index()
     {
-        return view('admin.pages.consultores.index');
+        $data = Consultor::latest()->get();
+        return view('admin.pages.consultores.index', compact('data'));
     }
 
     /**
@@ -35,15 +36,25 @@ class ConsultoresController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
-            'title' => 'required',
-            'desc' => 'required',
-            'content' => 'required',
+            'name' => 'required',
+            'email' => 'required',
+            'grupo' => 'required',
+            'phone' => 'required',
+            'city' => 'required',
+            'uf' => 'required',
+            'especialodade' => 'required',
+            'cod' => 'required',
+            'obs' => 'required'
         ]);
-        $this->cons->cat_id = $request->cat_id;
-        $this->cons->title = $request->title;
-        $this->cons->desc = $request->desc;
-        $this->cons->content = $request->content;
+        $this->cons->name = $request->name;
+        $this->cons->email = $request->email;
+        $this->cons->grupo = $request->grupo;
+        $this->cons->phone = $request->phone;
+        $this->cons->city = $request->city;
+        $this->cons->uf = $request->uf;
+        $this->cons->especialodade = $request->especialodade;
+        $this->cons->cod = $request->cod;
+        $this->cons->obs = $request->obs;
         $this->cons->save();
         return redirect()->back()->with('msg', 'Cadastrado com sucesso!');
     }
