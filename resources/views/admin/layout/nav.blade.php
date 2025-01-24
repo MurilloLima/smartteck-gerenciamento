@@ -160,7 +160,7 @@
                         <li class="nav-item">
                             <form action="{{ route('logout') }}" method="post">
                                 @csrf
-                                <button type="submit" value="Sair" class="btn btn-danger form-control">
+                                <button type="submit" value="Sair" class="nav-link">
                                     Sair
                                 </button>
                             </form>

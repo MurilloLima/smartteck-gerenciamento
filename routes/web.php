@@ -18,11 +18,13 @@ Route::get('/', function () {
     return view('admin.pages.index');
 });
 
-Route::get('/dashboard', function () {
-    return view('admin.pages.dashboard.index');
-})->middleware(['auth', 'verified'])->name('dashboard');
+// Route::get('/dashboard', function () {
+//     return view('admin.pages.dashboard.index');
+// })->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::middleware('auth')->group(function () {
+    Route::get('/dashboard', [ConsultoresController::class, 'index'])->name('dashboard');
+
     // smtp
     Route::get('/smtp', [SmtpController::class, 'index'])->name('smtp.index');
     //consultores
@@ -67,4 +69,4 @@ require __DIR__ . '/auth.php';
 
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/home', [ConsultoresController::class, 'index'])->name('home');
