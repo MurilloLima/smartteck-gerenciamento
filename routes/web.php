@@ -38,6 +38,7 @@ Route::middleware('auth')->group(function () {
     //grupos
     Route::get('/consultores/grupo', [GrupoController::class, 'index'])->name('grupo.index');
     Route::get('/consultores/grupo/create', [GrupoController::class, 'create'])->name('grupo.create');
+    Route::post('/consultores/grupo/store', [GrupoController::class, 'store'])->name('grupo.store');
     //devedores
     Route::get('/devedores', [DevedoresController::class, 'create'])->name('devedores.index');
     // financeiro
