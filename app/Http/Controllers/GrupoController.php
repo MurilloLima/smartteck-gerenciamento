@@ -20,7 +20,7 @@ class GrupoController extends Controller
      */
     public function create()
     {
-        //
+        
     }
 
     /**
@@ -28,7 +28,7 @@ class GrupoController extends Controller
      */
     public function store(Request $request)
     {
-        //
+    
     }
 
     /**

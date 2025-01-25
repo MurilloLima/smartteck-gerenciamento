@@ -10,7 +10,7 @@ class Grupo extends Model
     use HasFactory;
 
     protected $fillable = [
-        'name' => 'required',
+        'name',
         'desc',
         'list1',
         'list2',

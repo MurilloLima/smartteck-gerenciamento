@@ -4,10 +4,16 @@ namespace App\Http\Controllers\admin;
 
 use App\Http\Controllers\Controller;
 use App\Models\Consultor;
+use App\Models\Grupo;
 use Illuminate\Http\Request;
 
 class GrupoController extends Controller
 {
+    private $grupo;
+    public function __construct(Grupo $grupo)
+    {
+        $this->grupo = $grupo;
+    }
     /**
      * Display a listing of the resource.
      */
@@ -54,9 +60,33 @@ class GrupoController extends Controller
             'permite_vis_dashboard_devedor' => 'required',
             'situacao' => 'required',
         ]);
-        Consultor::create([$request->all()]);
+        $this->grupo->name = $request->name;
+        $this->grupo->desc = $request->desc;
+        $this->grupo->list1 = $request->list1;
+        $this->grupo->list2 = $request->list2;
+        $this->grupo->list3 = $request->list3;
+        $this->grupo->exibircons = $request->exibircons;
+        $this->grupo->exibirparc = $request->exibirparc;
+        $this->grupo->manual = $request->manual;
+        $this->grupo->valormeta = $request->valormeta;
+        $this->grupo->manual = $request->manual;
+        $this->grupo->valormeta = $request->valormeta;
+        $this->grupo->tipocomissao = $request->tipocomissao;
+        $this->grupo->percentualcomissao = $request->percentualcomissao;
+        $this->grupo->recibo = $request->recibo;
+        $this->grupo->qtde_dias_para_incluir_reagendamentos_pendentes_lista = $request->qtde_dias_para_incluir_reagendamentos_pendentes_lista;
+        $this->grupo->permite_limpar_transacao_como_consultor = $request->permite_limpar_transacao_como_consultor;
+        $this->grupo->permite_inativar_devedor_como_consultor = $request->permite_inativar_devedor_como_consultor;
+        $this->grupo->permite_pesquisa_por_situacao_devedor_como_consultor = $request->permite_pesquisa_por_situacao_devedor_como_consultor;
+        $this->grupo->permite_upload_boleto_manual_como_consultor = $request->permite_upload_boleto_manual_como_consultor;
+        $this->grupo->id_evento_reagendamento = $request->id_evento_reagendamento;
+        $this->grupo->permite_reagendamento_para_outros_consultores = $request->permite_reagendamento_para_outros_consultores;
+        $this->grupo->exibir_relatorio_financeiro_do_consultor = $request->exibir_relatorio_financeiro_do_consultor;
+        $this->grupo->permite_cadastro_devedores_dividas = $request->permite_cadastro_devedores_dividas;
+        $this->grupo->permite_vis_dashboard_devedor = $request->permite_vis_dashboard_devedor;
+        $this->grupo->situacao = $request->situacao;
+        $this->grupo->save();
         return redirect()->back()->with('msg', 'Cadastrado com sucesso!');
-
     }
 
     /**
