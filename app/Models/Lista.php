@@ -8,4 +8,14 @@ use Illuminate\Database\Eloquent\Model;
 class Lista extends Model
 {
     use HasFactory;
+
+    protected $fillable = [
+        'name',
+        'valor1',
+        '',
+        '',
+    ];
+}
+    
+valor1
 }
