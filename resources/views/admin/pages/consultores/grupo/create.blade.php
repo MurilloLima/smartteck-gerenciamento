@@ -19,6 +19,28 @@
     <section class="content">
         <div class="container-fluid">
             <div class="row">
+                <div class="col-12">
+                    @if ($errors->any())
+                        <div class="alert alert-danger text-center" style="margin: 10px;">
+                            <ul>
+                                @foreach ($errors->all() as $error)
+                                    <li style="text-align: center">{{ $error }}</li>
+                                @endforeach
+                            </ul>
+                        </div>
+                    @endif
+                    @if (session('msg'))
+                        <div class="row text-center">
+                            <div class="col-md-12" \>
+                                <div class="alert alert-success text-center" style="color: white; margin: 10px;">
+                                    {{ session('msg') }}
+                                </div>
+                            </div>
+                        </div>
+                    @endif
+                </div>
+            </div>
+            <div class="row">
                 <div class="col-md-12">
                     <div class="card">
                         <div class="card-header">
@@ -39,15 +61,13 @@
                                     <div class="col-md-6">
                                         <div class="form-group">
                                             <label for="">Nome</label>
-                                            <input type="text" class="form-control" name="name"
-                                                placeholder="Nome">
+                                            <input type="text" class="form-control" name="name" placeholder="Nome">
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
                                             <label for="">Descrição</label>
-                                            <input type="text" class="form-control" name="desc"
-                                                placeholder="">
+                                            <input type="text" class="form-control" name="desc" placeholder="">
                                         </div>
                                     </div>
                                 </div>
@@ -101,7 +121,7 @@
                                     <div class="col-md-4">
                                         <div class="form-group">
                                             <label for="exampleInputPassword1">Valor da meta dos consumidores</label>
-                                            <input type="text" class="form-control" id="valormeta" placeholder="">
+                                            <input type="text" class="form-control" name="valormeta" placeholder="">
                                         </div>
                                     </div>
                                     <div class="col-md-4">
@@ -175,7 +195,7 @@
                                     <div class="col-md-4">
                                         <div class="form-group">
                                             <label for="exampleInputPassword1">Percentual de comissão</label>
-                                            <select class="custom-select rounded-0" id="percentualcomissao">
+                                            <select class="custom-select rounded-0" name="percentualcomissao">
                                                 <option>Sobre o valor total recuperado</option>
                                                 <option>Sobre o valor total de honorários</option>
                                             </select>
