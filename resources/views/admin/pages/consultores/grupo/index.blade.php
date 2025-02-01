@@ -65,7 +65,7 @@
             <div class="row" style="margin-bottom: 10px">
                 <div class="col-md-12">
                     <a href="{{ route('grupo.create') }}" style="background-color: #D2670E; border-color: #D2670E;" class="btn btn-primary">Adicionar</a>
-                    <a href="" style="background-color: #D2670E; border-color: #D2670E;" class="btn btn-primary">Listas</a>
+                    <a href="{{ route('lista.index') }}" style="background-color: #D2670E; border-color: #D2670E;" class="btn btn-primary">Listas</a>
                     <a href="" style="background-color: #D2670E; border-color: #D2670E;" class="btn btn-primary">Whatsapp</a>
                 </div>
             </div>

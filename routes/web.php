@@ -35,6 +35,7 @@ Route::middleware('auth')->group(function () {
     //lista
     Route::get('/lista', [ListaController::class, 'index'])->name('lista.index');
     Route::get('/lista/create', [ListaController::class, 'create'])->name('lista.create');
+    Route::post('/lista/store', [ListaController::class, 'store'])->name('lista.store');
     //grupos
     Route::get('/consultores/grupo', [GrupoController::class, 'index'])->name('grupo.index');
     Route::get('/consultores/grupo/create', [GrupoController::class, 'create'])->name('grupo.create');
