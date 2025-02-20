@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 
 class DevedoresController extends Controller
 {
+    // test
     /**
      * Display a listing of the resource.
      */
