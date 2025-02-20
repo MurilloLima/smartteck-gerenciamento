@@ -8,3 +8,5 @@ EXPOSE 3000
 RUN chown -R node /usr/src/app
 USER node
 CMD ["npm", "start"]
+
+
