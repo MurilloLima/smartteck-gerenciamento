@@ -91,7 +91,7 @@
                         </p>
                     </a>
                     <ul class="nav nav-treeview">
-                       
+
                         <li class="nav-item">
                             <a href="" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
@@ -121,7 +121,7 @@
                         </p>
                     </a>
                     <ul class="nav nav-treeview">
-                       
+
                         <li class="nav-item">
                             <a href="" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
@@ -157,15 +157,19 @@
                                 <p>Perfil</p>
                             </a>
                         </li>
-                        <li class="nav-item">
-                            <form action="{{ route('logout') }}" method="post">
-                                @csrf
-                                <button type="submit" value="Sair" class="nav-link">
-                                    Sair
-                                </button>
-                            </form>
-                        </li>
                     </ul>
+                </li>
+                <li class="nav-item">
+                    <form action="{{ route('logout') }}" method="post">
+                        @csrf
+                        <button type="submit" value="Sair" class="nav-link btn btn-danger" style="color: #fff">
+                            {{-- <i class="far fa-circle nav-icon"></i> --}}
+                            {{-- <i class="fa-solid fa-right-to-bracket"></i> --}}
+                            {{-- <i class="far fa-circle nav-icon"></i> --}}
+                            <i class="fa fa-power-off" aria-hidden="true"></i>
+                            Sair
+                        </button>
+                    </form>
                 </li>
 
             </ul>

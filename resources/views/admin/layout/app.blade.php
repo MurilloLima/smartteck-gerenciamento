@@ -6,8 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Adminstrativo - @yield('title')</title>
     {{-- icon --}}
-    <link rel="icon" type="image/png" href="{{ asset('admin/dist/img/50x50.ico') }}" />
-
+    <link rel="icon" type="image/png" href="{{ asset('admin/dist/img/50x50.png') }}" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="{{ asset('admin/plugins/fontawesome-free/css/all.min.css') }}">
+    
     <!-- Tell the browser to be responsive to screen width -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Font Awesome -->

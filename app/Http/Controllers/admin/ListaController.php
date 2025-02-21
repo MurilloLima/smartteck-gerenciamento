@@ -46,6 +46,14 @@ class ListaController extends Controller
             '' => 'required'
         ]);
         $this->lista->name = $request->name;
+        $this->lista->name = $request->name;
+        $this->lista->name = $request->name;
+        $this->lista->name = $request->name;
+        $this->lista->name = $request->name;
+        $this->lista->name = $request->name;
+        $this->lista->name = $request->name;
+        $this->lista->name = $request->name;
+        $this->lista->name = $request->name;
         $this->lista->save();
         return redirect()->back()->with('msg', 'Cadastrado com sucesso!');
     }
