@@ -10,6 +10,10 @@
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+.btn-blue:houver {
+  color: #fd7e14 !important;
+}
+
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -33745,7 +33749,7 @@ html.maximized-card {
 .btn-default:active,
 .btn-default.hover {
   background-color: #e9ecef;
-  color: #2b2b2b;
+  color: #7f5006;
 }
 
 .btn-default.disabled,

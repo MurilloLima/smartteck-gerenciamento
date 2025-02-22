@@ -162,7 +162,7 @@
                 <li class="nav-item">
                     <form action="{{ route('logout') }}" method="post">
                         @csrf
-                        <button type="submit" value="Sair" class="nav-link btn btn-danger" style="color: #fff">
+                        <button type="submit" value="Sair" class="nav-link" style="color: #00";>
                             {{-- <i class="far fa-circle nav-icon"></i> --}}
                             {{-- <i class="fa-solid fa-right-to-bracket"></i> --}}
                             {{-- <i class="far fa-circle nav-icon"></i> --}}
