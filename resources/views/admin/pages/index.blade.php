@@ -70,10 +70,10 @@
                         {{ __('Forgot your password?') }}
                     </a>
                 @endif --}}
-                <p class="mb-0">
+                {{-- <p class="mb-0">
                     <a href="" class="text-center">Registre uma nova conta
                     </a>
-                </p>
+                </p> --}}
             </div>
             <!-- /.login-card-body -->
         </div>

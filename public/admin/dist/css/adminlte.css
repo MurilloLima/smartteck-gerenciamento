@@ -4773,7 +4773,7 @@ input[type="button"].btn-block {
 .nav-pills .nav-link.active,
 .nav-pills .show>.nav-link {
   color: #fff;
-  background-color: #007bff;
+  background-color: #fd7605;
 }
 
 .nav-fill>.nav-link,
@@ -17162,7 +17162,7 @@ body.text-sm .control-sidebar {
 }
 
 .nav-pills .nav-link:not(.active):hover {
-  color: #007bff;
+  color: #fd7605;
 }
 
 .nav-pills .nav-item.dropdown.show .nav-link:hover {
@@ -49366,7 +49366,7 @@ a.text-muted:hover {
 .accent-primary .btn-link:hover,
 .accent-primary a:not(.dropdown-item):not(.btn-app):not(.nav-link):not(.brand-link):not(.page-link):not(.badge):not(.btn):hover,
 .accent-primary .nav-tabs .nav-link:hover {
-  color: #0056b3;
+  color: #fd7605;
 }
 
 .accent-primary .dropdown-item:active,

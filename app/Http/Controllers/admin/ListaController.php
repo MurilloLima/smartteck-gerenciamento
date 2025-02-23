@@ -44,9 +44,8 @@ class ListaController extends Controller
             'diasvenctoate' => 'required',
             'tipo_negocio' => 'required',
             'data_ultimo_contato' => 'required',
-            'data_ultimo_contato' => 'required',
             'diasultimocontato' => 'required',
-            'diasultimocontato' => 'required',
+            '' => 'required',
             'tipo_evento_ultimo_contato' => 'required',
             'id_evento' => 'required',
             'incluir_parcelas_acordos_pendentes' => 'required',
@@ -82,8 +81,8 @@ class ListaController extends Controller
         $this->lista->tipo_negocio = $request->tipo_negocio;
         $this->lista->data_ultimo_contato = $request->data_ultimo_contato;
 
-        $this->lista->data_ultimo_contato = $request->name;
-        $this->lista->diasultimocontato = $request->name;
+        $this->lista->data_ultimo_contato = $request->data_ultimo_contato;
+        $this->lista->diasultimocontato = $request->diasultimocontato;
         $this->lista->diasultimocontato = $request->name;
         $this->lista->tipo_evento_ultimo_contato = $request->name;
         $this->lista->id_evento = $request->name;
@@ -108,7 +107,6 @@ class ListaController extends Controller
         $this->lista->acao_bloqueio_ajuizamento = $request->name;
         $this->lista->limite_registros = $request->name;
         $this->lista->situacao = $request->name;
-
         $this->lista->save();
         return redirect()->back()->with('msg', 'Cadastrado com sucesso!');
     }
